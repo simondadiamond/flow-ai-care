@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 bg-gradient-to-r from-flow-blue to-flow-teal rounded-md"></div>
-              <h2 className="text-xl font-bold">MaintenanceFlow AI</h2>
+              <h2 className="text-xl font-bold">WorkflowLeaf</h2>
             </div>
-            <p className="text-gray-400 mt-2">Transforming property maintenance with intelligent automation</p>
+            <p className="text-gray-400 mt-2">Transforming property management with intelligent automation</p>
           </div>
           
           <div className="flex flex-col items-center md:items-end">

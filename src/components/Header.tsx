@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 bg-gradient-to-r from-flow-blue to-flow-teal rounded-md"></div>
-          <h1 className="text-xl font-bold text-flow-blue">MaintenanceFlow AI</h1>
+          <h1 className="text-xl font-bold text-flow-blue">WorkflowLeaf</h1>
         </div>
         
         <nav className="hidden md:flex gap-8 items-center">
@@ -40,7 +40,7 @@ const Header = () => {
             Solution
           </button>
           <Button className="btn-primary">
-            Request Early Access
+            Join Early Access
           </Button>
         </nav>
         

@@ -1,39 +1,45 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Workflow, Network, Brain, MessageSquare, ChartLine } from 'lucide-react';
+import { Workflow, MessageSquare, Network, Brain, ChartLine, Layout } from 'lucide-react';
 
 const SolutionSection = () => {
   const features = [
     {
       icon: <Workflow className="h-10 w-10 text-flow-blue" />,
-      title: "Intelligent Intake",
-      description: "Tenants can effortlessly submit requests through a streamlined digital portal.",
+      title: "MaintenanceFlow AI",
+      description: "Intelligent Care at Your Fingertips. Streamlined tenant submissions with intelligent routing to the right personnel.",
       isAvailable: true
-    },
-    {
-      icon: <Network className="h-10 w-10 text-flow-blue" />,
-      title: "Dynamic Routing",
-      description: "Our adaptive system intuitively directs requests to the right personnel, minimizing delays.",
-      isAvailable: true
-    },
-    {
-      icon: <Brain className="h-10 w-10 text-flow-blue" />,
-      title: "Proactive Insights",
-      description: "Anticipate potential issues with data-driven analysis, moving from reactive to predictive maintenance.",
-      isAvailable: false
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-flow-blue" />,
-      title: "Seamless Communication",
-      description: "Foster transparent communication between tenants, managers, and maintenance teams – all in one platform.",
+      title: "TenantConnect AI",
+      description: "Imagine tenant inquiries handled instantly via intelligent voice/chat, freeing your team to focus on higher-value tasks.",
+      isAvailable: false
+    },
+    {
+      icon: <Layout className="h-10 w-10 text-flow-blue" />,
+      title: "LeaseLens Automation",
+      description: "Future AI-powered tools will automate lease generation, renewals, and ensure compliance with local regulations.",
       isAvailable: false
     },
     {
       icon: <ChartLine className="h-10 w-10 text-flow-blue" />,
-      title: "Performance Optimization",
-      description: "Gain valuable insights into maintenance trends to optimize resource allocation and improve service delivery.",
+      title: "RentFlow Insights",
+      description: "Gain holistic property performance views with intelligent dashboards on occupancy, rent collection, and maintenance.",
       isAvailable: true
+    },
+    {
+      icon: <Brain className="h-10 w-10 text-flow-blue" />,
+      title: "Predictive Occupancy",
+      description: "Anticipate vacancies and optimize marketing with future predictive analytics.",
+      isAvailable: false
+    },
+    {
+      icon: <Network className="h-10 w-10 text-flow-blue" />,
+      title: "CommunityConnect",
+      description: "Foster community with integrated communication tools for announcements and engagement.",
+      isAvailable: false
     }
   ];
 
@@ -42,10 +48,10 @@ const SolutionSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Introducing <span className="gradient-text">MaintenanceFlow AI</span>
+            Welcome to the <span className="gradient-text">Future of Property Management</span>
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            The Intelligent Hub for Property Care
+            Introducing the WorkflowLeaf Property Hub
           </p>
         </div>
         

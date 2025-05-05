@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Activity, Layers } from 'lucide-react';
+import { ArrowRight, Network, Brain } from 'lucide-react';
 import { m } from 'framer-motion';
 
 const HeroSection = () => {
@@ -26,16 +26,16 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="gradient-text">Predictive Property Care,</span>
+              <span className="gradient-text">Orchestrate Seamless</span>
               <br />
-              <span>Effortlessly Managed.</span>
+              <span>Property Experiences.</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-              Intelligent maintenance request routing and streamlined workflows that anticipate needs and resolve issues faster.
+              The intelligent platform unifying tenant interactions, property management workflows, and predictive insights for unparalleled efficiency and resident satisfaction.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button className="btn-primary gap-2 text-lg">
-                Request Early Access
+                Join the Early Access Program
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                 >
-                  <Activity className="h-6 w-6 text-white" />
+                  <Network className="h-6 w-6 text-white" />
                 </m.div>
                 <m.div 
                   className="absolute bottom-1/4 right-1/4 bg-flow-teal p-2 rounded-full shadow-lg"
@@ -69,7 +69,7 @@ const HeroSection = () => {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  <Layers className="h-6 w-6 text-white" />
+                  <Brain className="h-6 w-6 text-white" />
                 </m.div>
                 <m.div 
                   className="absolute bottom-1/5 left-1/3 bg-flow-lightBlue p-2 rounded-full shadow-lg"
@@ -77,7 +77,7 @@ const HeroSection = () => {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 1 }}
                 >
-                  <Activity className="h-6 w-6 text-white" />
+                  <Network className="h-6 w-6 text-white" />
                 </m.div>
                 
                 {/* Connection lines */}

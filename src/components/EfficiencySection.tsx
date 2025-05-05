@@ -1,74 +1,73 @@
 
 import React from 'react';
-import { User, Building, Clock } from 'lucide-react';
+import { m } from 'framer-motion';
 
 const EfficiencySection = () => {
-  const benefits = [
-    {
-      icon: <User className="h-10 w-10 text-flow-blue" />,
-      title: "For Tenants",
-      points: [
-        "Submit requests in seconds through a user-friendly portal",
-        "Track repair status in real-time",
-        "Communicate directly with maintenance teams",
-        "Receive automated updates at every stage"
-      ]
-    },
-    {
-      icon: <Building className="h-10 w-10 text-flow-blue" />,
-      title: "For Property Managers",
-      points: [
-        "Centralized overview of all maintenance activities",
-        "Automated routing and assignment of requests",
-        "Custom workflows based on property needs",
-        "Reduced administrative overhead"
-      ]
-    },
-    {
-      icon: <Clock className="h-10 w-10 text-flow-teal" />,
-      title: "Save Time & Resources",
-      points: [
-        "50% reduction in request processing time",
-        "30% decrease in maintenance response time",
-        "Elimination of duplicate entry and paperwork",
-        "Fewer callbacks and follow-ups needed"
-      ]
-    }
-  ];
-
   return (
     <section id="features" className="section-padding bg-gray-50">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Simple for Tenants, <span className="gradient-text">Powerful for You</span>
-          </h2>
-          <p className="text-lg text-gray-600">
-            MaintenanceFlow AI is designed with intuitive interfaces for all users. Tenants can submit requests in seconds, and property managers gain a centralized overview of all maintenance activities without the administrative burden.
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 shadow-md animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="mb-6 flex justify-center">
-                <div className="bg-flow-green p-4 rounded-full">
-                  {benefit.icon}
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-center mb-4">{benefit.title}</h3>
-              <ul className="space-y-2">
-                {benefit.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <div className="h-5 w-5 mt-0.5 rounded-full bg-flow-teal/20 flex items-center justify-center">
-                      <div className="h-2 w-2 rounded-full bg-flow-teal"></div>
-                    </div>
-                    <span className="text-gray-700">{point}</span>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              One Platform, Limitless Potential
+            </h2>
+            <p className="text-lg text-gray-600">
+              The WorkflowLeaf Property Hub connects tenants and managers through a unified interface. Start with intelligent maintenance and seamlessly unlock future tools designed to revolutionize property management.
+            </p>
+          </div>
+          
+          <m.div
+            className="bg-white rounded-xl shadow-lg overflow-hidden"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-1/2 bg-gradient-to-br from-flow-blue to-flow-teal p-8 text-white">
+                <h3 className="text-2xl font-bold mb-4">For Property Managers</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1">✓</span>
+                    <span>Centralized dashboard for all property activities</span>
                   </li>
-                ))}
-              </ul>
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1">✓</span>
+                    <span>Automated tenant request routing and prioritization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1">✓</span>
+                    <span>Performance insights and optimization recommendations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1">✓</span>
+                    <span>Enhanced tenant satisfaction through faster response times</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="md:w-1/2 p-8">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">For Tenants</h3>
+                <ul className="space-y-4 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1 text-flow-blue">✓</span>
+                    <span>Simple, intuitive interface for submitting maintenance requests</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1 text-flow-blue">✓</span>
+                    <span>Real-time updates on request status and resolution</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1 text-flow-blue">✓</span>
+                    <span>Transparent communication with property management</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block mr-3 mt-1 text-flow-blue">✓</span>
+                    <span>Higher satisfaction through faster issue resolution</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          ))}
+          </m.div>
         </div>
       </div>
     </section>
